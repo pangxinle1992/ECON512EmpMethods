@@ -32,3 +32,30 @@ D=(A'*A)\b;
 E=sum(A,2)'*b;
 F=A([1 3], [1 2]);
 x=A\b;
+%% Question 4
+clear
+
+A=[2,4,6;1,7,5;3,12,4];
+B=kron(eye(5), A);
+
+%% Question 5
+clear
+
+m=5;n=3;
+A=normrnd(10,5,[m,n]);
+AA=zeros(m,n);
+for i=1:m
+   for j=1:n
+       if A(i,j)>=10
+           AA(i,j)=1;
+       end
+   end
+end
+
+%% Question 6
+clear
+
+Data=csvread('datahw1.csv');
+tb=table(Data(:,3),Data(:,4),Data(:,5),Data(:,6),'VariableNames', {'Export','RD','prod','cap'});
+OLS=fitlm(tb,'prod~Export+RD+cap');
+display(OLS);
