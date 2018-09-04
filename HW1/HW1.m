@@ -18,7 +18,7 @@ X=linspace(-10, 20, 200);
 sumX=0;
 
 for i=1:200
-   sumX=sumX+X(i); %sum x element by element
+   sumX=sumX+X(i); 
 end
 
 %% Question 3
