@@ -1,0 +1,95 @@
+
+sumX =
+
+        1000
+
+
+C =
+
+    29
+   133
+    43
+
+
+D =
+
+   -3.2505
+    0.3961
+    0.8037
+
+
+E =
+
+   205
+
+
+F =
+
+     2     4
+     3    12
+
+
+x =
+
+   -0.1622
+    1.2432
+   -1.1081
+
+
+B =
+
+     2     4     6     0     0     0     0     0     0     0     0     0     0     0     0
+     1     7     5     0     0     0     0     0     0     0     0     0     0     0     0
+     3    12     4     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     2     4     6     0     0     0     0     0     0     0     0     0
+     0     0     0     1     7     5     0     0     0     0     0     0     0     0     0
+     0     0     0     3    12     4     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     2     4     6     0     0     0     0     0     0
+     0     0     0     0     0     0     1     7     5     0     0     0     0     0     0
+     0     0     0     0     0     0     3    12     4     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     2     4     6     0     0     0
+     0     0     0     0     0     0     0     0     0     1     7     5     0     0     0
+     0     0     0     0     0     0     0     0     0     3    12     4     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     2     4     6
+     0     0     0     0     0     0     0     0     0     0     0     0     1     7     5
+     0     0     0     0     0     0     0     0     0     0     0     0     3    12     4
+
+
+A =
+
+    9.8497    5.6817   17.6632
+    9.1756   10.3868    6.1517
+   13.1385    3.9294   11.8569
+   15.4663    4.4325    8.8721
+   15.5464    9.9658   15.5868
+
+
+AA =
+
+     0     0     1
+     0     1     0
+     1     0     1
+     1     0     0
+     1     0     1
+
+
+OLS = 
+
+
+Linear regression model:
+    prod ~ 1 + Export + RD + cap
+
+Estimated Coefficients:
+                   <strong>Estimate</strong><strong>       SE    </strong><strong>    tStat </strong><strong>      pValue  </strong>
+                   <strong>________</strong>    <strong>_________</strong>    <strong>______</strong>    <strong>__________</strong>
+
+    <strong>(Intercept)</strong>    0.081731     0.016729    4.8858     1.067e-06
+    <strong>Export     </strong>     0.12013    0.0063242    18.996    2.1895e-77
+    <strong>RD         </strong>     0.13993    0.0085393    16.386    1.2832e-58
+    <strong>cap        </strong>    0.029492    0.0017839    16.532    1.3211e-59
+
+
+Number of observations: 4392, Error degrees of freedom: 4388
+Root Mean Squared Error: 0.179
+R-squared: 0.353,  Adjusted R-Squared 0.353
+F-statistic vs. constant model: 799, p-value = 0

@@ -1,4 +1,6 @@
 %ECON HW1 Xinle Pang
+
+diary hw1d.out
 %% Question 1
 
 X=[1,1.5,3,4,5,7,9,10];
@@ -21,6 +23,7 @@ for i=1:200
    sumX=sumX+X(i); 
 end
 
+display(sumX);
 %% Question 3
 clear
 
@@ -32,12 +35,15 @@ D=(A'*A)\b;
 E=sum(A,2)'*b;
 F=A([1 3], [1 2]);
 x=A\b;
+
+display(C); display(D); display(E); display(F); display(x);
 %% Question 4
 clear
 
 A=[2,4,6;1,7,5;3,12,4];
 B=kron(eye(5), A);
 
+display(B);
 %% Question 5
 clear
 
@@ -52,6 +58,7 @@ for i=1:m
    end
 end
 
+display(A); display(AA);
 %% Question 6
 clear
 
@@ -59,3 +66,5 @@ Data=csvread('datahw1.csv');
 tb=table(Data(:,3),Data(:,4),Data(:,5),Data(:,6),'VariableNames', {'Export','RD','prod','cap'});
 OLS=fitlm(tb,'prod~Export+RD+cap');
 display(OLS);
+
+diary off
