@@ -61,7 +61,8 @@ end
 display(A); display(AA);
 %% Question 6
 clear
-
+% csvread replaces NaN with zeros, making estimates of coefficients a
+% little off
 Data=csvread('datahw1.csv');
 tb=table(Data(:,3),Data(:,4),Data(:,5),Data(:,6),'VariableNames', {'Export','RD','prod','cap'});
 OLS=fitlm(tb,'prod~Export+RD+cap');
