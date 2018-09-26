@@ -3,7 +3,7 @@
 
 %% Question 1
 clear;
-v=[2,2]; p=[2,2];
+v=[2,2]; p=[1,1];
 [fval,D]=bertrand2(v,p);
 display(D);
 
