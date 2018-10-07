@@ -102,6 +102,7 @@ for iter = 1:maxit
 end
 toc
 
+
 %% Question 5
 va=2;
 vb=0:0.2:3;
