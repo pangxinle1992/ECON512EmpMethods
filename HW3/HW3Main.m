@@ -30,6 +30,7 @@ t(2) = toc;
 beta(2,:)=beta2;
 fval(2)=fval2;
 
+% why are 1 and 2 so different? does that ring any alarm?
 
 %% Question 3
 tic
@@ -44,7 +45,8 @@ tic
 t(4)=toc;
 beta(4,:)=beta4;
 fval(4)=fval4;
-
+%  same question here, 3 and 4 should be approxomately the same. why are
+%  they not?
 
 %% Question 5
 % consider the following possible initial values, start with [0;0;0;0;0;0],
