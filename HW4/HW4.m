@@ -11,6 +11,7 @@ pie=4*sum(test)/n;
 clear;
 n=10000;
 x=0:1/n:1; y=0:1/n:1; z=4*dart(x,y);
+% I am not sute this is the right implementation of the NC
 %use equal weights
 w=2*ones(length(x),1);w(1)=1;w(end)=1;w=w*(1/(2*n));
 pie=w'*z*w;
