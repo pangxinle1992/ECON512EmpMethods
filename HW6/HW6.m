@@ -1,5 +1,5 @@
 %Stochastic Tree Cutting Problem
-
+% all looks good, check plus
 
 clear
 
