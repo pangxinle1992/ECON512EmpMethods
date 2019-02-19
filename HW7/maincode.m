@@ -1,15 +1,17 @@
 clear;
 
-%%load parameters
+%% load parameters
 parameters;
 
-%%Part 1 Calculate the value and price policy
+%% Part 1 Calculate the value and price policy
 %intialize value function and pricing function
 
 p0=7*ones(L,L);
 V0=zeros(L,L);
 
 [V, p, iter] = valueiter(V0, p0);
+
+% did not converge to the equilibrium. 
 
 figure(1);
 mesh(V);
@@ -20,7 +22,7 @@ mesh(p);
 title('Policy Function');
 
 
-%%Part 2 Calculate the state transition 
+%% Part 2 Calculate the state transition 
 %use the information of the state transition, and the endogenous pricing
 %function
 %construct demand probability given price function p
