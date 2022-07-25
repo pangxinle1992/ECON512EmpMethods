@@ -1,5 +1,7 @@
 %ECON HW1 Xinle Pang
 
+%Add new
+
 diary hw1d.out
 %% Question 1
 
